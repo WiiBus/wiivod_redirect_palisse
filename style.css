@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Neuropol';
+    src: url(./fonts/neuropol.woff) format("woff")
+}
+
+html, body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    height: 10vh;
+    /*overflow: hidden;*/
+}
+
+.root{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-color: black;
+    font-family: 'Neuropol';
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+
+.company{
+    font-family: 'Neuropol' !important;
+    font-size: 42px;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+.container{
+    width: 66%;
+    margin: auto;
+}
+
+
+.wiivod, .wiipress{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    margin: auto; 
+    margin-top: 15px; 
+    border-radius: 10px;  
+}
+
+.txtvod, .txtpress{
+    flex: 2;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    margin: auto;
+    text-align: center;
+}
+
+.imgvod, .imgpress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgcine, .imgpresses{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iired{
+    color: #e4002b;
+}
+
+.searchbar{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+}
+.searchbar input{
+    font-size: 20px;
+    border-radius: 100px;
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+}
+
+.googlebutton{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imggoogle{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 175px;
+    margin-top: 60px;
+}
+
+.reseaux{
+    font-family: 'Neuropol';
+    color: white;
+    margin-top: 66px;
+    text-align: center;
+}
+
+.imgreseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    }
+
+.imgreseaux .icon{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    margin: 0px 15px
+}
+
+.imgreseaux .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width : 720px){
+
+    .header{
+        font-size: 12px;
+    }
+    .container{
+        width: 90%;
+    }
+    .company{
+        font-size: 23px;
+    } 
+    .txtvod, .txtpress{
+        width: 100%;
+        margin: 10px 0px;
+        font-size: 14px;
+    }
+
+    .imgvod, .imgpress{
+        height: 90px;
+    }
+    .searchbar input{
+        font-size: 18px;
+    }
+}
